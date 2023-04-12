@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                     new ClientNetworkIo().connect("172.27.176.1", 12345);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    Snackbar.make(view, e.toString(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 }
             }).start();
         });

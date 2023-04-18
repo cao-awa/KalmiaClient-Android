@@ -1,6 +1,6 @@
 package com.github.zhuaidadaya.rikaishinikui.handler.universal.entrust;
 
-import com.alibaba.fastjson2.JSONArray;
+//import com.alibaba.fastjson2.JSONArray;
 import com.github.zhuaidadaya.rikaishinikui.handler.universal.entrust.function.ExceptingConsumer;
 import com.github.zhuaidadaya.rikaishinikui.handler.universal.entrust.function.ExceptingFunction;
 import com.github.zhuaidadaya.rikaishinikui.handler.universal.entrust.function.ExceptingRunnable;
@@ -330,9 +330,9 @@ public class EntrustEnvironment {
         return list.get(random.nextInt(list.size()));
     }
 
-    public static <T> T select(JSONArray list, Random random) {
-        return cast(list.get(random.nextInt(list.size())));
-    }
+//    public static <T> T select(JSONArray list, Random random) {
+//        return cast(list.get(random.nextInt(list.size())));
+//    }
 
     public static <T> T desert(List<T> list, Random random) {
         T result = list.get(random.nextInt(list.size()));

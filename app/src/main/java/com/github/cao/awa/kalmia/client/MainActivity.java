@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         this.configuration = new AppBarConfiguration.Builder(
                 Set.of(
-                        R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                        R.id.nav_home, R.id.nav_gallery
                 )).setOpenableLayout(drawerLayout)
                 .setFallbackOnNavigateUpListener(() -> false)
                 .build();
